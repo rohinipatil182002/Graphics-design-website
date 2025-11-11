@@ -1,12 +1,12 @@
 <section class="hero-section d-flex align-items-center">
-    <video class="background-video desktop-video" [muted]="true" [loop]="true" [autoplay]="true" playsinline>
+    <video class="background-video desktop-video"  [muted]="true" muted autoplay loop playsinline>
         <source
             src="https://graphics.blob.core.windows.net/graphics/1.%20Home%20Page/1.%20Background%20Video/TUM%202024.mp4"
             type="video/mp4" />
         Your browser does not support the video tag. 
     </video>
     <!-- Mobile Video -->
-    <video class="background-video mobile-video" autoplay muted loop playsinline preload="auto">
+    <video class="background-video mobile-video" autoplay muted loop playsinline preload="auto" [muted]="true">
         <source
             src="https://graphics.blob.core.windows.net/graphics/Mobile%20view-20251107T051329Z-1-001/Mobile%20view/Home%20Page/Short%20Reel%20video/VIDEO-2024-03-06-18-58-50.mp4"
             type="video/mp4" />
