@@ -1,0 +1,141 @@
+.client-upper-section {
+  position: relative;
+  padding-top: 140px;
+  height: 475px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: 
+  linear-gradient(180deg, rgba(76, 0, 42, 0.85) 0%, rgba(88, 9, 53, 0.85) 100%),
+  url("https://graphics.blob.core.windows.net/graphics/Banner%20Images/Clients%20banner/6761b4df-9821-489c-aef5-11e7d2e74176.JPG")
+  center 90% / cover no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  overflow: hidden;
+}
+
+.client-upper-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}
+
+.client-title {
+  font-family: 'Baskervville', serif;
+  font-size: 135px;
+  font-weight: 400;
+  line-height: 125px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.client-decription {
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #FFFFFF;
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1399.98px) {
+  .client-title {
+    font-size: 110px;
+    line-height: 115px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .client-title {
+    font-size: 95px;
+    line-height: 100px;
+  }
+  .client-decription {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .client-title {
+    font-size: 75px;
+    line-height: 80px;
+  }
+  .client-decription {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .client-upper-section {
+    height: auto;
+    padding: 100px 0 60px;
+    background-attachment: scroll;
+    background-position: center bottom; 
+  }
+  .client-title {
+    font-size: 45px;
+    line-height: 65px;
+    text-align: center;
+  }
+  .client-decription {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
+@media (max-width:575px) {
+ .client-title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .client-title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 8px;
+  }
+  .client-decription {
+    font-size: 13px;
+    line-height: 26px;
+  }
+}
+
+/* ------------------------------- logo seletion ------------------------------------- */
+
+.card {
+  width: 100%;
+  max-width: 320px;
+  height: 140px;
+  border-radius: 25px;
+  border: 0.54px solid transparent;
+  box-shadow: 0px 4.35px 27.16px 0px #0000001A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border: 1px solid #651240;
+}
+
+.client-img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  display: block;
+}

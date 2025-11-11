@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top" [ngClass]="{
+    'custom-navbar': !isScrolled && !isEventPage,
+    'scrolled-navbar': isScrolled || isEventPage
+  }">
+    <div class="container-fluid px-4 px-md-5 d-flex align-items-center justify-content-between">
+
+        <a class="navbar-brand logo-text d-lg-none" href="#">
+            <img src="assets/Images/Logo.svg" alt="Logo" />
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav text-center text-lg-start">
+                <li class="nav-item"><a class="nav-link " routerLink="/home" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: true }" (click)="closeNavbar()">Home</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/about-us" routerLinkActive="active"
+                        (click)="closeNavbar()">About us</a>
+                </li>
+                <li class="nav-item dropdown" [class.show]="isServiceOpen">
+                    <!-- <a class="nav-link dropdown-toggle" routerLink="/service" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }"
+                        (click)="toggleServiceDropdown()" [attr.aria-expanded]="isServiceOpen">
+                        Service
+                    </a> -->
+                    <a class="nav-link dropdown-toggle" routerLink="/service" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: false }" (click)="toggleServiceDropdown()"
+                        [attr.aria-expanded]="isServiceOpen" [ngClass]="{ 'active': isServiceParentActive }">
+                        Service
+                    </a>
+
+
+
+                    <ul class="dropdown-menu" [class.show]="isServiceOpen">
+                        <li><a class="dropdown-item" routerLink="/branding" routerLinkActive="active"
+                                (click)="closeDropdown();closeNavbar()" style="border-top: none!important;">Branding</a>
+                        </li>
+                        <li><a class="dropdown-item" routerLink="/sport-event-management" routerLinkActive="active"
+                                (click)="closeDropdown();closeNavbar()">Sports
+                                Event Management</a></li>
+                        <li><a class="dropdown-item" routerLink="/exhibition-setup" routerLinkActive="active"
+                                (click)="closeDropdown();closeNavbar()">Exhibition Setup</a></li>
+                        <li><a class="dropdown-item" routerLink="/retail-branding" routerLinkActive="active"
+                                (click)="closeDropdown();closeNavbar()">Retail Branding</a></li>
+                        <li><a class="dropdown-item" routerLink="/conference-seminars" routerLinkActive="active"
+                                (click)="closeDropdown();closeNavbar()">Conference & Seminars</a></li>
+                        <li><a class="dropdown-item" routerLink="/live-event-setup" routerLinkActive="active"
+                                (click)="closeDropdown();closeNavbar()">Live Event</a></li>
+                        <li><a class="dropdown-item" routerLink="/other-event" routerLinkActive="active"
+                                (click)="closeDropdown();closeNavbar()">Other Events</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" routerLink="/events" routerLinkActive="active"
+                        (click)="closeNavbar()">Events</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/clients" routerLinkActive="active"
+                        (click)="closeNavbar()">Clients</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" routerLink="/contact-us" routerLinkActive="active"
+                        (click)="closeNavbar()">Contact
+                        Us</a></li>
+            </ul>
+        </div>
+
+        <a class="navbar-brand logo-text d-none d-lg-block" href="#">
+            <img src="assets/Images/Logo.svg" alt="Logo" />
+        </a>
+
+    </div>
+</nav>

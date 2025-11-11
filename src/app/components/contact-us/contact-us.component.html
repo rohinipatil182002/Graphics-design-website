@@ -1,0 +1,124 @@
+<!-- <section class="contact-upper-section container-fluid d-flex align-items-center">
+  <div class="container-fluid d-flex align-items-center" style="width: 85%;">
+    <h2 class="contact-title">Contact Us</h2>
+  </div>
+</section>
+
+<section class="contact-form-section container-fluid py-5 ">
+     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Full Name <span class="required-star">*</span></label>
+                            <input type="text" formControlName="fullName" class="input-fields"
+                                placeholder="Input your full name in here" [disabled]="isSubmitting" />
+                            <small *ngIf="f['fullName'].invalid && f['fullName'].touched"
+                                class="error">
+                                Full Name is required
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address <span class="required-star">*</span></label>
+                            <input type="email" formControlName="email" class="input-fields"
+                                placeholder="Input your email address in here" [disabled]="isSubmitting" />
+                            <small *ngIf="f['email'].invalid && f['email'].touched"
+                                class="error">
+                                Valid email is required
+                            </small>
+                        </div>
+
+                         <div class="form-group">
+                            <label class="form-label">Mobile Number <span class="required-star">*</span></label>
+                            <input type="tel" formControlName="mobile" class="input-fields"
+                                placeholder="Input your Phone Number in here" [disabled]="isSubmitting" />
+                            <small *ngIf="f['mobile'].invalid && f['mobile'].touched"
+                                class="error">
+                                Must be a 10-digit number
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Company Name <span class="required-star">*</span></label>
+                            <input type="text" formControlName="companyName" class="input-fields"
+                                placeholder="Input your Company Name in here" [disabled]="isSubmitting" />
+                            <small *ngIf="f['companyName'].invalid && f['companyName'].touched"
+                                class="error">
+                                Company name is required
+                            </small>
+                        </div>
+                         <div class="form-group">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control input-fields" rows="6" formControlName="message"
+                                    placeholder="Write your message in here"></textarea>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="align-items-center d-flex ms-3"> 
+                <button type="submit" class="btn submit-btn text-center" 
+                        [disabled]="contactForm.invalid || isSubmitting">
+                    {{ isSubmitting ? 'Sending...' : 'Send ' }}
+                </button>
+            </div>
+        </form>
+</section>  -->
+
+
+<section class="contact-upper-section container-fluid d-flex align-items-center">
+  <div class="container-fluid d-flex align-items-center" style="width: 85%;">
+    <h2 class="contact-title">Contact Us</h2>
+  </div>
+</section>
+
+<section class="contact-form-section container-fluid py-5 ">
+     <form>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Full Name <span class="required-star">*</span></label>
+                            <input type="text" formControlName="fullName" class="input-fields"
+                                placeholder="Input your full name in here"  />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address <span class="required-star">*</span></label>
+                            <input type="email" formControlName="email" class="input-fields"
+                                placeholder="Input your email address in here" />                       
+                        </div>
+
+                         <div class="form-group">
+                            <label class="form-label">Mobile Number <span class="required-star">*</span></label>
+                            <input type="tel" formControlName="mobile" class="input-fields"
+                                placeholder="Input your Phone Number in here" />  
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Company Name <span class="required-star">*</span></label>
+                            <input type="text" formControlName="companyName" class="input-fields"
+                                placeholder="Input your Company Name in here"  />             
+                        </div>
+                         <div class="form-group">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control input-fields" rows="6" formControlName="message"
+                                    placeholder="Write your message in here"></textarea>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="align-items-center d-flex ms-3"> 
+                <button type="submit" class="btn submit-btn text-center" 
+                        >
+                   Send
+                </button>
+            </div>
+        </form>
+</section> 

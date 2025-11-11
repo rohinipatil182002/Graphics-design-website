@@ -1,0 +1,250 @@
+.custom-navbar {
+    background: #ffffff14;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    margin: 30px auto;
+    width: 85%;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scrolled-navbar {
+  background-color: #4C002ACC !important;
+  border-radius: 30px;
+  margin: 30px auto;
+  width: 85%;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.navbar-nav .nav-link {
+    font-size: 20px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #fff !important;
+    line-height: 1.2;
+    font-weight: 400;
+    margin: 0 35px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #EDD573 !important;
+}
+
+.logo-text img {
+    height: 45px;
+    transition: transform 0.3s ease;
+}
+
+.logo-text img:hover {
+    transform: scale(1.05);
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* -------------------------------- DropDown ---------------------- */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    backdrop-filter: blur(30px);
+    background: #4C002A80;
+    list-style: none;
+    min-width: 220px;
+    z-index: 2000;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+    border-top: 0.2px solid #EDD573;
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #EDD573;
+}
+
+.dropdown-menu.show {
+    display: block;
+    border-radius: 0px 0px 25px 25px;
+    padding: 0px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  top: 100%;
+  margin-top: 20px; 
+  left: 0;
+  right: auto;
+  border-radius: 0px 0px 25px 25px;
+  padding: 0;
+  border: none;
+  backdrop-filter: blur(30px);
+  background: #4C002A80;
+}
+
+/* ---------------------- Responsive Breakpoints ---------------------- */
+
+@media (min-width: 1870px) {
+    .navbar-nav .nav-link {
+        font-size: 22px;
+        margin: 0 50px;
+    }
+
+    .logo-text img {
+        height: 55px;
+    }
+}
+
+@media (max-width: 1869.98px) and (min-width: 1200px) {
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        margin: 0 27px;
+    }
+
+    .custom-navbar {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .navbar-nav .nav-link {
+        font-size: 17px;
+        margin: 0 20px;
+    }
+
+    .logo-text img {
+        height: 40px;
+    }
+
+    .custom-navbar {
+        width: 90%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .custom-navbar {
+        width: 95%;
+        border-radius: 20px;
+        margin: 20px auto;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 20px 0;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .logo-text img {
+        height: 40px;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .custom-navbar {
+        margin: 15px auto;
+        width: 95%;
+        border-radius: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 17px;
+        margin: 8px 0;
+    }
+
+    .logo-text img {
+        height: 38px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .custom-navbar {
+        width: 95%;
+        margin: 12px auto;
+        border-radius: 12px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        margin: 6px 0;
+    }
+
+    .logo-text img {
+        height: 35px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .custom-navbar {
+        width: 95%;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    .logo-text img {
+        height: 32px;
+    }
+
+    .navbar-toggler-icon {
+        width: 22px;
+        height: 22px;
+    }
+}
+/* --------------------- dropdown responsive css ---------------------------- */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 15px 0;
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+    position: static;
+    margin-top: 0;
+    background: rgba(76, 0, 42, 0.8);
+    border-radius: 10px;
+  }
+
+  .dropdown-menu li a {
+    padding: 10px;
+  }
+
+  .navbar-collapse {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+  }
+}

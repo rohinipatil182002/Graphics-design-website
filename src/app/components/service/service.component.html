@@ -1,0 +1,138 @@
+<section class="about-upper-section container-fluid d-flex align-items-center justify-content-center ">
+    <div class="container-fluid" style="width: 85%;">
+        <h2 class="about-title">Our Services</h2>
+    </div>
+</section>
+
+<section class="service-content-section container-fluid py-5 ">
+    <div class="container-fluid" style="width: 85%;">
+        <div class="d-flex justify-content-center">
+            <h1 class="graphics-design-title"><span style="color: #580935;">Graphic Design & Display:</span> Your
+                One-Stop Solution for Event
+                Management
+            </h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="graphics-design-description py-5">Graphic Design Display is your ultimate destination for seamless
+                and memorable event management. We
+                specialize in delivering events tailored to your needs, ensuring every aspect is meticulously planned
+                and
+                executed. Our comprehensive services guarantee a flawless experience for both organizers and
+                attendees.</p>
+        </div>
+    </div>
+</section>
+
+<section class="planning-image">
+    <img src="https://graphics.blob.core.windows.net/graphics/3.%20Service%20Page/Services%20page%20photos/585b03f0-5d55-4bbd-b4f8-4951a7bf69c0.jpg"
+        alt="" class="service-image">
+</section>
+
+<section class="event-planning-section container-fluid py-5 ">
+    <div class="container-fluid pb-3" style="width: 85%;">
+        <h1 class="py-4 event-planning-title">Event Planning, Coordination,<br> and Execution</h1>
+        <p class="event-planning-desc mb-4">Our expert team excels in event planning and coordination, handling
+            everything from conceptualization to
+            final execution. We work closely with you to understand your vision, objectives, and requirements. Our
+            services include: Branding, Sports Management, Exhibitions, Retail Branding, Conference & Seminars,
+            Expos, Live concerts Technology Event, Government Events And more!</p>
+        <p class="event-planning-desc">
+            At Graphic Design & Display, we bring your sports event vision to life with professionalism, precision, and
+            passion. Contact us today to start planning your next unforgettable event.
+        </p>
+    </div>
+</section>
+
+<section class="explore container-fluid py-md-5 py-2">
+    <div class="container-fluid">
+        <h1 class="explore-title pb-5">
+            Explore
+        </h1>
+
+        <!-- <div class="explore-services">
+            <div class="row">
+                <div class="col-md-4 col-lg-3 col-6">
+                    <div class="card">
+                        <img src="assets/Images/service1.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Branding</h5>
+                            <p class="card-text">Innovative Branding Solutions for Every Business Need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-6">
+                    <div class="card">
+                        <img src="assets/Images/service2.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Branding</h5>
+                            <p class="card-text">Innovative Branding Solutions for Every Business Need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-6">
+                    <div class="card">
+                        <img src="assets/Images/service3.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Branding</h5>
+                            <p class="card-text">Innovative Branding Solutions for Every Business Need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-6">
+                    <div class="card">
+                        <img src="assets/Images/service4.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Branding</h5>
+                            <p class="card-text">Innovative Branding Solutions for Every Business Need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-6">
+                    <div class="card">
+                        <img src="assets/Images/service5.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Branding</h5>
+                            <p class="card-text">Innovative Branding Solutions for Every Business Need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-6">
+                    <div class="card">
+                        <img src="assets/Images/service6.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Branding</h5>
+                            <p class="card-text">Innovative Branding Solutions for Every Business Need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-6">
+                    <div class="card">
+                        <img src="assets/Images/service7.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Branding</h5>
+                            <p class="card-text">Innovative Branding Solutions for Every Business Need.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+   
+    <div class="explore-services">
+      <div class="row g-lg-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let service of services">
+          <div class="card">
+            <img [src]="service.image" class="card-img-top d-block" alt="{{ service.title }}">
+            <div class="card-body">
+              <h5 class="card-title pb-4">{{ service.title }}</h5>
+              <p class="card-text">{{ service.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+   
+   
+    </div>
+
+</section>

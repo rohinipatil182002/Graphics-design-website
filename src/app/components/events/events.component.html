@@ -1,0 +1,97 @@
+<div class="events-main-container" *ngIf="!showGallery && !showCarousel">
+    <div class="event-carousel">
+        <div class="carousel-track">
+            <div class="carousel-item carousel-item-for-top" *ngFor="let img of images; let i = index"
+                [class.active]="i === activeIndex" [class.prev]="i === prevIndex" [class.next]="i === nextIndex">
+                <img [src]="img" alt="Event Image" />
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------- Our work ------------------------------------- -->
+    <section class="our-work-section container-fluid py-5">
+        <div class="text-start mb-4 container-fluid" style="width: 85%;">
+            <h2 class="our-work-title">Our Work</h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4" *ngFor="let work of works">
+                <div class="work-card position-relative overflow-hidden" (click)="openGallery(work)">
+                    <img [src]="work.img" alt="Our Work" class="img-fluid w-100 work-img" />
+                    <div class="work-overlay position-absolute bottom-0 start-0 w-100 px-3 pb-2">
+                        <h5 class="overlay-text">{{ work.title }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ---------------------------------- event second page ---------------------------------------- -->
+<div class="event-gallery-page container-fluid pb-4" *ngIf="showGallery" >
+    <div class="container-fluid text-center mb-md-5 mb-3">
+        <button class="btn btn-outline-primary mb-4" (click)="showGallery = false">← Back</button>
+        <h2 class="event-title">{{selectedTitle}}</h2>
+        <!-- <p class="event-desc">
+            Graphics Design & Display Private Limited, your premier choice for top-notch event
+            management services with over 20 years of extensive production and branding
+            experience throughout India.
+        </p> -->
+    </div>
+
+    <div class="mb-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4" *ngFor="let img of selectedGallery">
+               <div class="img-wrapper" (click)="openImageCarousel(selectedGallery)">
+                    <img [src]="img" alt="2024 Event" class="img-fluid shadow-sm" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2023 Section -->
+    <!-- <div class="">
+        <h3 class="year-title mb-4">2023</h3>
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4" *ngFor="let img of gallery2023">
+                <div class="img-wrapper" (click)="openImageCarousel(gallery2023)">
+                    <img [src]="img" alt="2023 Event" class="img-fluid shadow-sm" />
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>
+
+
+<!-- ----------------------------- Display full images by scrolling ------------------------------------------ -->
+
+<div class="our-event pb-5 " *ngIf="showCarousel">
+    <div class="blur-background">
+        <img *ngFor="let img of selectedGallery; let i = index" [src]="img"
+            [class.active-bg]="i === currentCarouselIndex" class="blur-bg-img" alt="Background" />
+    </div>
+
+    <div class="container-fluid carousel-content" style="width: 70%; margin-top: 130px;">
+        <button class="btn btn-outline-primary mb-4" (click)="goBackToGallery()">← Back</button>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="border-radius: 20px;">
+                <div class="carousel-item" *ngFor="let img of selectedGallery; let i = index"
+                    [ngClass]="{ active: i === 0 }">
+                    <img [src]="img" class="d-block w-100 event-img" alt="Event Image" />
+
+                </div>
+            </div>
+
+            <button class="carousel-control-prev custom-carousel-control" type="button"
+                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" (click)="updateCarouselIndex('prev')">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+
+            <button class="carousel-control-next custom-carousel-control" type="button"
+                data-bs-target="#carouselExampleCaptions" data-bs-slide="next" (click)="updateCarouselIndex('next')">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</div>
