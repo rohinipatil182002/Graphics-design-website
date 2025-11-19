@@ -28,9 +28,9 @@
 </div>
 
 <!-- ---------------------------------- event second page ---------------------------------------- -->
-<div class="event-gallery-page container-fluid pb-4" *ngIf="showGallery" >
+<div class="event-gallery-page container-fluid pb-4" *ngIf="showGallery">
     <div class="container-fluid text-center mb-md-5 mb-3">
-        <button class="btn btn-outline-primary mb-4" (click)="showGallery = false">← Back</button>
+        <!-- <button class="btn btn-outline-primary mb-4" (click)="showGallery = false">← Back</button> -->
         <h2 class="event-title">{{selectedTitle}}</h2>
         <!-- <p class="event-desc">
             Graphics Design & Display Private Limited, your premier choice for top-notch event
@@ -42,7 +42,7 @@
     <div class="mb-5">
         <div class="row g-4">
             <div class="col-12 col-sm-6 col-lg-4" *ngFor="let img of selectedGallery">
-               <div class="img-wrapper" (click)="openImageCarousel(selectedGallery)">
+                <div class="img-wrapper" (click)="openImageCarousel(selectedGallery)">
                     <img [src]="img" alt="2024 Event" class="img-fluid shadow-sm" />
                 </div>
             </div>
@@ -65,14 +65,14 @@
 
 <!-- ----------------------------- Display full images by scrolling ------------------------------------------ -->
 
-<div class="our-event pb-5 " *ngIf="showCarousel">
+<div class="our-event py-5 " *ngIf="showCarousel" style="margin-top: 130px;">
     <div class="blur-background">
         <img *ngFor="let img of selectedGallery; let i = index" [src]="img"
             [class.active-bg]="i === currentCarouselIndex" class="blur-bg-img" alt="Background" />
     </div>
 
-    <div class="container-fluid carousel-content" style="width: 70%; margin-top: 130px;">
-        <button class="btn btn-outline-primary mb-4" (click)="goBackToGallery()">← Back</button>
+    <div class="container-fluid carousel-content pb-5" style="width: 70%">
+        <!-- <button class="btn btn-outline-primary mb-4" (click)="goBackToGallery()">← Back</button> -->
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" style="border-radius: 20px;">
@@ -94,4 +94,5 @@
             </button>
         </div>
     </div>
+
 </div>

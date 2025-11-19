@@ -6,7 +6,7 @@
   background:
     linear-gradient(rgba(88, 9, 53, 0.6), rgba(88, 9, 53, 0.6)),
     /* Overlay color */
-    url("https://graphics.blob.core.windows.net/graphics/Banner%20Images/About%20Us%20Banner%20image/IMG_8633.JPG") center center / cover no-repeat;
+    url("https://websitemetadata.blob.core.windows.net/website/Banner%20Images/About%20Us%20Banner%20image/IMG_8633.JPG") center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

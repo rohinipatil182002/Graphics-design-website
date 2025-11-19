@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { EventsResetService } from 'src/app/events-reset.service';
 declare var bootstrap: any;
 
 @Component({
@@ -13,7 +14,7 @@ export class NavbarComponent {
   isEventPage = false;
   isServiceParentActive = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private eventsReset: EventsResetService) { }
 
   ngOnInit() {
     this.router.events.subscribe(event => {
@@ -63,5 +64,7 @@ export class NavbarComponent {
     }
   }
 
-
+resetEventsPage() {
+  this.eventsReset.triggerReset();
+}
 }

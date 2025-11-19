@@ -4,7 +4,7 @@
     height: 397px;
     background:
         linear-gradient(rgba(88, 9, 53, 0.6), rgba(88, 9, 53, 0.6)),
-        url("https://graphics.blob.core.windows.net/graphics/Banner%20Images/Service%20Banner/PHOTO-2023-08-17-09-12-01.jpg") center center / cover no-repeat;
+        url("https://websitemetadata.blob.core.windows.net/website/Banner%20Images/Service%20Banner/PHOTO-2023-08-17-09-12-01.jpg") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
