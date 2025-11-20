@@ -9,59 +9,72 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ContactUsComponent {
 
-  // contactForm: FormGroup;
-  // isSubmitting = false;
+ contactForm!: FormGroup;
+  isSubmitting = false;
 
-  // constructor(private fb: FormBuilder, private toastr: ToastrService) {
-  //   this.contactForm = this.fb.group({
-  //     fullName: ['', Validators.required],
-  //     email: ['', [Validators.required, Validators.email]],
-  //     mobile: ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
-  //     companyName: ['', Validators.required],
-  //     message: ['']
-  //   });
+  constructor(private fb: FormBuilder, private toastr: ToastrService) {
+    emailjs.init('rg4BtF5yq7BuzWiC3');
+  }
 
+  ngOnInit() {
+    this.contactForm = this.fb.group({
+      fullName: ['', Validators.required],
+      email: [
+        '',
+        [
+          Validators.required,
+          Validators.email,
+          Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}$/)
+        ]
+      ],
+      mobile: ['',  [
+          Validators.required,
+          Validators.pattern(/^[6-9]\d{9}$/)   
+        ]],
+      companyName: ['', Validators.required],
+      message: ['']
+    });
+  }
 
-  //   emailjs.init('OJ0BWS7vxhei2rTon');
-  // }
+  onSubmit(): void {
+     if (this.contactForm.invalid) {
+      Object.values(this.contactForm.controls).forEach(control => {
+        control.markAsTouched();
+        control.updateValueAndValidity();
+      });
+      return;
+    }
 
+      this.isSubmitting = true;
 
-  // onSubmit(): void {
-  //   if (this.contactForm.valid) {
-  //     this.isSubmitting = true;
+      const templateParams = {
+        to_email: 'info@graphicdesigndisplay.com',
+        from_name: this.contactForm.value.fullName,
+        from_email: this.contactForm.value.email,
+        from_phone: this.contactForm.value.mobile,
+        company: this.contactForm.value.companyName,
+        message: this.contactForm.value.message
+      };
 
-  //     const templateParams = {
-  //       to_email: 'info@graphicdesigndisplay.com',
-  //       from_name: this.contactForm.value.fullName,
-  //       from_email: this.contactForm.value.email,
-  //       from_phone: this.contactForm.value.mobile,
-  //       company: this.contactForm.value.companyName,
-  //       message: this.contactForm.value.message
-  //     };
+      emailjs.send(
+        'service_601e71d',
+        'template_0fkdic6',
+        templateParams
+      ).then(
+        () => {
+          this.toastr.success('Message sent successfully!', 'Success');
+          this.isSubmitting = false;
+          this.contactForm.reset();
+        },
+        () => {
+          this.toastr.error('Failed to send message. Please try again.', 'Error');
+          this.isSubmitting = false;
+        }
+      );
+    
+  }
 
-  //     emailjs.send(
-  //       'service_4rcruo5',
-  //       'template_jtu79de',
-  //       templateParams
-  //     ).then(
-  //       () => {
-  //         this.toastr.success('Message sent successfully!', 'Success');
-  //         this.isSubmitting = false;
-  //         this.contactForm.reset();
-  //       },
-  //       () => {
-  //         this.toastr.error('Failed to send message. Please try again.', 'Error');
-  //         this.isSubmitting = false;
-  //       }
-  //     );
-  //   } else {
-  //     Object.keys(this.contactForm.controls).forEach(key => {
-  //       this.contactForm.get(key)?.markAsTouched();
-  //     });
-  //   }
-  // }
-
-  // get f() {
-  //   return this.contactForm.controls;
-  // }
+  get f() {
+    return this.contactForm.controls;
+  }
 }
