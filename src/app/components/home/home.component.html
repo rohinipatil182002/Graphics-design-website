@@ -1,9 +1,9 @@
 <section class="hero-section d-flex align-items-center">
-    <video class="background-video desktop-video"  [muted]="true" muted autoplay loop playsinline>
+    <video class="background-video desktop-video" [muted]="true" muted autoplay loop playsinline>
         <source
             src="https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/1.%20Background%20Video/TUM%202024.mp4"
             type="video/mp4" />
-        Your browser does not support the video tag. 
+        Your browser does not support the video tag.
     </video>
     <!-- Mobile Video -->
     <video class="background-video mobile-video" autoplay muted loop playsinline preload="auto" [muted]="true">
@@ -18,7 +18,7 @@
     <div class="container-fluid text-center text-md-start content-wrapper" style="width: 85%;">
         <div class="row align-items-center">
             <div class="col-md-9 ms-md-5">
-                <h1 class="hero-title ">Graphic Design<br>& Display pvt.ltd</h1>
+                <h1 class="hero-title ">Graphic Design<br>& Display Pvt.Ltd</h1>
                 <div
                     class="hero-subtext d-flex align-items-center justify-content-center justify-content-md-start mt-5 pt-2 gap-3 flex-wrap">
                     <div class="circle-btn" routerLink="/service">
@@ -31,9 +31,11 @@
                 </div>
             </div>
         </div>
-        <a routerLink="/Service" class="whatsapp-icon">
+
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="whatsapp-icon">
             <img src="assets/Images/logos_whatsapp-icon.svg" alt="WhatsApp">
         </a>
+
     </div>
 </section>
 
@@ -47,7 +49,8 @@
             <div class="carousel-inner" style="border-radius: 20px;">
                 <div class="carousel-item" *ngFor="let img of eventImages; let i = index"
                     [ngClass]="{ active: i === 0 }">
-                    <img [src]="img" class="d-block w-100 event-img" alt="NIKE AFTER DARK TOUR 2025" routerLink="/events"/>
+                    <img [src]="img" class="d-block w-100 event-img" alt="NIKE AFTER DARK TOUR 2025"
+                        routerLink="/events" />
 
                     <div class="event-caption text-center">
                         <h5 class="event-caption-title">Nike After Dark Tour 2025</h5>
@@ -55,13 +58,13 @@
                 </div>
             </div>
 
-            <button class="carousel-control-prev custom-carousel-control" type="button"
-                data-bs-target="#carouselEvents" data-bs-slide="prev">
+            <button class="carousel-control-prev custom-carousel-control" type="button" data-bs-target="#carouselEvents"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
 
-            <button class="carousel-control-next custom-carousel-control" type="button"
-                data-bs-target="#carouselEvents" data-bs-slide="next">
+            <button class="carousel-control-next custom-carousel-control" type="button" data-bs-target="#carouselEvents"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
         </div>
@@ -88,13 +91,17 @@
 
     <div class="logo-slider">
         <div class="logo-track">
-        
+
             <ng-container *ngFor="let logo of clientLogos">
-                <img [src]="logo" alt="Client Logo" />
+                <div class="logo-box">
+                    <img [src]="logo" alt="Client Logo" />
+                </div>
             </ng-container>
 
             <ng-container *ngFor="let logo of clientLogos">
-                <img [src]="logo" alt="Client Logo" />
+                <div class="logo-box">
+                    <img [src]="logo" alt="Client Logo" />
+                </div>
             </ng-container>
         </div>
     </div>
@@ -111,12 +118,12 @@
         <div class="carousel-inner">
             <div class="carousel-item" *ngFor="let video of eventVideos; let i = index" [ngClass]="{ active: i === 0 }">
                 <div class="video-wrapper">
-                    <video class="event-video" [src]="video" autoplay [muted]="true" loop playsinline></video>
+                     <video class="event-video" [src]="video" controls playsinline></video>
+
                 </div>
             </div>
         </div>
 
-        <!-- Controls moved outside -->
         <button class="carousel-control-prev custom-carousel-control custom-carousole-control-video-prev" type="button"
             data-bs-target="#carouselAction" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

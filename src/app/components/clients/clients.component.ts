@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ClientsComponent {
 clientLogos: string[] = [
-    "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/08aed8a9cbb0668ad6d6cb4516410d69.png",
+    // "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/08aed8a9cbb0668ad6d6cb4516410d69.png",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/1.png",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/10.png",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/11.png",
@@ -16,7 +16,7 @@ clientLogos: string[] = [
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/13.png",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/14.png",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/15.jpg",
-    "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/16.webp",
+    // "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/16.webp",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/17.png",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/18.png",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/19.png",
@@ -46,6 +46,7 @@ clientLogos: string[] = [
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/Fitizen-Sports-Event-Logo-Final_White-Background-2-scaled.webp",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/Hyperice-Logo.png",
     //"https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/craycol_wordmark_white_only_logo_698b164b-309d-4b1e-a081-fbe44d0a3c98.png",
+    "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/Life-Fitness-Logo.png",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/e693927f0626a7823e87edc86e785d16.png",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/ezgif.com-gif-maker_316c42d2-0897-40bc-81d1-5119f87bfef7.webp",
     "https://websitemetadata.blob.core.windows.net/website/5.%20Client%20Logo/imgonline-com-ua-resize-jK5SMzfGHeA.jpg",

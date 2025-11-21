@@ -5,7 +5,8 @@
             <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
                 <h2 class="footer-title">Let's get in touch</h2>
                 <div class="footer-nav mt-4 mb-4">
-                    <button class="footer-btn" routerLink="/about-us" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About us</button>
+                    <button class="footer-btn" routerLink="/about-us" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: true }">About us</button>
                     <button class="footer-btn" routerLinkActive="active" routerLink="service">Service</button>
                     <button class="footer-btn" routerLinkActive="active" routerLink="/events">Events</button>
                     <button class="footer-btn" routerLinkActive="active" routerLink="/contact-us">Contact Us</button>
@@ -41,18 +42,23 @@
                 </div>
                 <div class=" d-md-flex mb-3 col-12 d-block">
 
-                        <div class="col-md-6 col-12 mb-sm-5 mb-3 col-xxl-4">
-                            <div class="footer-info">
-                                <i class="bi bi-envelope-fill"></i>
-                                <span>info@graphicdesigndisplay.com</span>
-                            </div>
+                    <div class="col-md-6 col-12 mb-sm-5 mb-3 col-xxl-4">
+                        <div class="footer-info">
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@graphicdesigndisplay.com"
+                                target="_blank">
+                                info@graphicdesigndisplay.com
+                            </a>
                         </div>
-                        <div class="col-md-6 col-12 mb-sm-5 mb-3">
-                            <div class="footer-info ">
-                                <i class="bi bi-telephone-fill"></i>
-                                <span>[+91] 8080158519</span>
-                            </div>
+                    </div>
+                    <div class="col-md-6 col-12 mb-sm-5 mb-3">
+                        <div class="footer-info ">
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:+918080158519" target="_blank" rel="noopener noreferrer">
+                                [+91] 8080158519
+                            </a>
                         </div>
+                    </div>
 
                 </div>
             </div>

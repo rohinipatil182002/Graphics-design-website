@@ -95,6 +95,15 @@
     transform: scale(1.1);
     filter: brightness(1.3);
 }
+.footer-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-info a:hover {
+    color: #ffb800;
+}
+
 /* @media (max-width: 767.98px) {
     .footer-section {
         padding: 60px 15px;
@@ -129,20 +138,24 @@
         padding: 8px;
     }
 } */
- /* Extra Large Screens */
+ @media (max-width:1599px) {
+    .footer-title {
+    font-size: 85px;
+    }
+ }
+
 @media (max-width: 1399.98px) {
     .footer-title {
-        font-size: 80px;
+        font-size: 65px;
         line-height: 100px;
     }
 }
 
-/* Large Laptops */
 @media (max-width: 1199.98px) {
-    .footer-title {
+    /* .footer-title {
         font-size: 70px;
         line-height: 90px;
-    }
+    } */
 
     .footer-subtitle {
         font-size: 22px;
@@ -170,16 +183,11 @@
         margin-top: 15px;
     }
 
-    /* .footer-info {
-        justify-content: center;
-    } */
-
     .footer-info i {
         margin-bottom: 5px;
     }
 }
 
-/* Small Tablets & Large Mobiles */
 @media (max-width: 767.98px) {
     .footer-section {
         padding-top: 60px;
@@ -221,7 +229,6 @@
     }
 }
 
-/* Mobile Phones */
 @media (max-width: 575.98px) {
     .footer-section {
         padding: 30px 0px;
@@ -263,7 +270,6 @@
     }
 }
 
-/* Extra Small Phones */
 @media (max-width: 400px) {
     .footer-title {
         font-size: 26px;

@@ -30,10 +30,23 @@
     z-index: 2;
     text-transform: capitalize;
 }
+@media (max-width:1650px){
+   .about-title {
+        font-size: 100px;
+        line-height: 110px;
+    }
 
+}
+@media (max-width:1390px){
+   .about-title {
+        font-size: 80px;
+        line-height: 110px;
+    }
+
+}
 @media (max-width: 1199.98px) {
     .about-title {
-        font-size: 100px;
+        font-size: 60px;
         line-height: 110px;
     }
 
@@ -44,8 +57,7 @@
 
 @media (max-width: 991.98px) {
     .about-title {
-        font-size: 80px;
-        line-height: 95px;
+        line-height: 75px;
     }
 
     .about-upper-section {

@@ -15,7 +15,10 @@
         *ngFor="let logo of clientLogos"
       >
         <div class="card">
-          <img [src]="logo" alt="Client Logo" class="client-img" />
+          <div class="logo-box">
+            <img [src]="logo" alt="Client Logo" class="client-img" />
+          </div>
+          
         </div>
       </div>
     </div>

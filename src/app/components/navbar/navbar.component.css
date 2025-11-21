@@ -9,13 +9,14 @@
 }
 
 .scrolled-navbar {
-  background-color: #4C002ACC !important;
-  border-radius: 30px;
-  margin: 30px auto;
-  width: 85%;
-  transition: all 0.3s ease;
-  z-index: 1000;
+    background-color: #4C002ACC !important;
+    border-radius: 30px;
+    margin: 30px auto;
+    width: 85%;
+    transition: all 0.3s ease;
+    z-index: 1000;
 }
+
 .navbar-nav .nav-link {
     font-size: 20px;
     font-family: 'Gilroy-Medium', sans-serif;
@@ -90,16 +91,20 @@
 }
 
 .nav-item.dropdown .dropdown-menu {
-  top: 100%;
-  margin-top: 20px; 
-  left: 0;
-  right: auto;
-  border-radius: 0px 0px 25px 25px;
-  padding: 0;
-  border: none;
-  backdrop-filter: blur(30px);
-  background: #4C002A80;
+    top: 100%;
+    margin-top: 18px;
+    left: 0;
+    right: auto;
+    border-radius: 0px 0px 25px 25px;
+    padding: 0;
+    border: none;
+    background: rgba(76, 0, 42, 0.40) !important;
+
+    backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
+
 
 /* ---------------------- Responsive Breakpoints ---------------------- */
 
@@ -110,7 +115,7 @@
     }
 
     .logo-text img {
-        height: 55px;
+        height: 57px;
     }
 }
 
@@ -223,28 +228,29 @@
         height: 22px;
     }
 }
+
 /* --------------------- dropdown responsive css ---------------------------- */
 @media (max-width: 991.98px) {
-  .navbar-nav {
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 15px;
-    padding: 15px 0;
-  }
+    .navbar-nav {
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 15px;
+        padding: 15px 0;
+    }
 
-  .nav-item.dropdown .dropdown-menu {
-    position: static;
-    margin-top: 0;
-    background: rgba(76, 0, 42, 0.8);
-    border-radius: 10px;
-  }
+    .nav-item.dropdown .dropdown-menu {
+        position: static;
+        margin-top: 0;
+        background: rgba(76, 0, 42, 0.8);
+        border-radius: 10px;
+    }
 
-  .dropdown-menu li a {
-    padding: 10px;
-  }
+    .dropdown-menu li a {
+        padding: 10px;
+    }
 
-  .navbar-collapse {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-  }
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+    }
 }

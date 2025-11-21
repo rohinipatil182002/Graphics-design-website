@@ -40,7 +40,7 @@ export class HomeComponent {
   ];
 
   clientLogos: string[] = [
-    'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/08aed8a9cbb0668ad6d6cb4516410d69.png',
+    // 'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/08aed8a9cbb0668ad6d6cb4516410d69.png',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/10th.png',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/11th.webp',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/12th.png',
