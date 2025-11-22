@@ -46,11 +46,11 @@
         <h1 class="pb-5 text-center event-main-title my-2">Our Recent Events</h1>
 
         <div id="carouselEvents" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" style="border-radius: 20px;">
+            <div class="carousel-inner" style="border-radius: 20px; cursor: pointer;">
                 <div class="carousel-item" *ngFor="let img of eventImages; let i = index"
                     [ngClass]="{ active: i === 0 }">
-                    <img [src]="img" class="d-block w-100 event-img" alt="NIKE AFTER DARK TOUR 2025"
-                        routerLink="/events" />
+                    <img [src]="img" class="d-block w-100 event-img" alt="event"
+                        (click)="goToOurWorkSection()"/>
 
                     <div class="event-caption text-center">
                         <h5 class="event-caption-title">Nike After Dark Tour 2025</h5>

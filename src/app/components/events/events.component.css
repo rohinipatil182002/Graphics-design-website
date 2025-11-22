@@ -153,8 +153,11 @@
 }
 
 .our-work-title {
-    font-size: 48px;
-    font-weight: 700;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 125px;
+    letter-spacing: -5px;
     color: #000;
 }
 
@@ -163,6 +166,7 @@
     position: relative;
     transition: transform 0.4s ease;
     height: 445px;
+    cursor: pointer;
 }
 
 .work-card:hover {
@@ -182,22 +186,33 @@
 
 .overlay-text {
     font-family: 'Gilroy-Medium', sans-serif;
-    font-size: 29px;
+    font-size: 25px;
     font-weight: 400;
-    line-height: 20.46px;
+    line-height: 30.46px;
     color: #fff;
     letter-spacing: -0.41px;
+}
+@media (max-width:1650px) {
+    .overlay-text {
+    font-size: 25px;
+    line-height: 30px;
+}
+
 }
 
 @media (max-width: 1399.98px) {
     .our-work-title {
         font-size: 42px;
+        line-height: 100px;
+        letter-spacing: -2px;
     }
 }
 
 @media (max-width: 1199.98px) {
     .our-work-title {
         font-size: 40px;
+        line-height: 80px;
+        letter-spacing: 0px;
     }
 
     .overlay-text {
@@ -208,6 +223,8 @@
 @media (max-width: 991.98px) {
     .our-work-title {
         font-size: 36px;
+        line-height: 50px;
+        font-weight: 600;
     }
 
     .work-card {
@@ -216,6 +233,7 @@
 
     .overlay-text {
         font-size: 20px;
+        line-height: 25px;
     }
 }
 
@@ -243,7 +261,7 @@
     }
 
     .overlay-text {
-        font-size: 18px;
+        font-size: 22px;
     }
 }
 
@@ -293,6 +311,16 @@
     transform: scale(1.05);
 }
 
+.btn-back{
+    background-color: #4C002ACC ;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+     font-family: 'Gilroy-Medium', sans-serif;
+    font-size:20px;
+    font-weight: 400;
+}
+
 @media (max-width: 1199.98px) {
     .event-gallery-page {
         margin-top: 120px;
@@ -316,6 +344,9 @@
     .event-desc {
         font-size: 0.8rem;
         margin: 0 20px;
+    }
+    .btn-back{
+        font-size: 15px;
     }
 
 }

@@ -12,8 +12,9 @@ export class EventsComponent implements OnInit, OnDestroy {
   showGallery = false;
   showCarousel = false;
   selectedWork: any = null;
-  selectedGallery: string[] = [];
+  selectedGallery: any = [];
   currentCarouselIndex = 0;
+  isYearWise = false;
 
   images: string[] = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Event%20Top%20Photos/0ea41c92-8d38-4f51-b053-f3a80a96b417.JPG',
@@ -55,7 +56,7 @@ export class EventsComponent implements OnInit, OnDestroy {
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/27th%20National%20Conference%20on%20E-%20Governance/PHOTO-2024-09-03-13-37-05.jpg'
   ];
 
-  mumbai_marathon = [
+  mumbai_marathon_2023 = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2023/IMG_8316.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2023/IMG_8546.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2023/IMG_8661.JPG',
@@ -79,9 +80,10 @@ export class EventsComponent implements OnInit, OnDestroy {
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2023/WhatsApp%20Image%202024-03-05%20at%2012.10.52%20(1).jpeg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2023/WhatsApp%20Image%202024-03-05%20at%2012.10.52.jpeg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2023/WhatsApp%20Image%202024-03-05%20at%2012.10.53%20(1).jpeg',
-    'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2023/WhatsApp%20Image%202024-03-05%20at%2012.10.53.jpeg',
+    'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2023/WhatsApp%20Image%202024-03-05%20at%2012.10.53.jpeg'
+  ];
 
-
+  mumbai_marathon_2024 = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2024/IMG_3151.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2024/PHOTO-2024-08-22-23-13-36.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/2024/PHOTO-2024-08-23-02-13-12%202.jpg',
@@ -159,7 +161,7 @@ export class EventsComponent implements OnInit, OnDestroy {
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/AMAZON%20RUN%202023/WhatsApp%20Image%202024-03-05%20at%2012.10.43%20(2).jpeg'
   ];
 
-  apollo_tyres_marathon = [
+  apollo_tyres_marathon_2023 = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/2023/Double-Olympic-champion-David-Rudisha-all-set-to-flag-off-the-Apollo-Tyres-New-Delhi-Marathon.-1024x683.jpeg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/2023/IMG_6301.PNG',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/2023/IMG_8867.jpg',
@@ -173,8 +175,9 @@ export class EventsComponent implements OnInit, OnDestroy {
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/2023/PHOTO-2023-02-26-03-28-39.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/2023/PHOTO-2023-02-26-05-23-59.jpg',
 
+  ];
 
-
+  apollo_tyres_marathon_2024 = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/2024/IMG_3108.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/2024/IMG_9165.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/2024/IMG_9171.jpg',
@@ -396,7 +399,7 @@ export class EventsComponent implements OnInit, OnDestroy {
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Himalaya%20walkatahon/IMG_0495.jpg'
   ];
 
-  hiranandani_marathon = [
+  hiranandani_marathon_2024 = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/2024/1484bfbd-90a1-4d60-bb52-4339a7e247e5.JPG',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/2024/1DEF2340-5CB4-449B-9520-7BD8153163DB.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/2024/IMG_8286.jpg',
@@ -434,7 +437,9 @@ export class EventsComponent implements OnInit, OnDestroy {
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/2024/WhatsApp%20Image%202024-03-05%20at%2012.10.27.jpeg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/2024/WhatsApp%20Image%202024-03-05%20at%2012.10.28.jpeg',
 
+  ];
 
+  hiranandani_marathon_2025 = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/2025/IMG_8748.JPG',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/2025/IMG_8757.JPG',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/2025/IMG_8767.JPG',
@@ -655,7 +660,7 @@ export class EventsComponent implements OnInit, OnDestroy {
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAHARASHTRA%20POLICE%20INTERNATIONAL%20MARATHON/f0826bb6-d54f-4867-a8ea-490995313a53%202.JPG',
   ];
 
-  mazdock_challege = [
+  mazdock_challege_2024 = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/2024/PHOTO-2024-01-04-23-11-19.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/2024/PHOTO-2024-01-04-23-11-27.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/2024/PHOTO-2024-01-04-23-40-19.jpg',
@@ -672,8 +677,9 @@ export class EventsComponent implements OnInit, OnDestroy {
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/2024/PHOTO-2024-01-07-06-40-04.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/2024/WhatsApp%20Image%202024-03-05%20at%2012.10.41%20(1).jpeg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/2024/d8988936f0d44b18b71c51512653d1f9.jpg',
+  ];
 
-
+  mazdock_challege_2025 = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/2025/GavAikRWEAEQjnR.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/2025/PHOTO-2024-12-12-02-41-35%202.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/2025/PHOTO-2024-12-12-02-41-35.jpg',
@@ -722,7 +728,7 @@ export class EventsComponent implements OnInit, OnDestroy {
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/PINKATHON/colors-pinkathon_1556010870.jpg'
   ];
 
-  satara_marathon = [
+  satara_marathon_2023 = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/2023/3cd39fc9-362b-4579-a23f-42c3f5e861b9.JPG',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/2023/3ff0040e-94f9-4f71-9183-0838f67fe5d9.JPG',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/2023/IMG_2048.jpg',
@@ -749,8 +755,9 @@ export class EventsComponent implements OnInit, OnDestroy {
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/2023/WhatsApp%20Image%202024-03-05%20at%2012.10.44%20(2).jpeg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/2023/WhatsApp%20Image%202024-03-05%20at%2012.10.45.jpeg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/2023/WhatsApp%20Image%202024-03-05%20at%2012.10.46.jpeg',
+  ];
 
-
+  satara_marathon_2024 = [
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/2024/IMG_2036.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/2024/IMG_2044.jpg',
     'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/2024/IMG_9137.JPG',
@@ -1088,7 +1095,10 @@ export class EventsComponent implements OnInit, OnDestroy {
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/Title%20Image/Copy%20of%20IMG_3151.jpg',
       title: 'Ageas Federal Mumbai Half Marathon',
-      gallery: this.mumbai_marathon
+      gallery: [
+        { year: "2024", photos: this.mumbai_marathon_2024 },
+        { year: "2023", photos: this.mumbai_marathon_2023 }
+      ]
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/AIRTEL%20DELHI%20HALF%20MARATHON/Title%20photo/Copy%20of%20IMG_0363.jpg',
@@ -1097,13 +1107,16 @@ export class EventsComponent implements OnInit, OnDestroy {
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/AMAZON%20RUN%202023/Title%20Image/WhatsApp%20Image%202024-03-05%20at%2012.10.43%20(1).jpeg',
-      title: 'AMAZON RUN 2023',
+      title: 'Amazon Run 2023',
       gallery: this.amazonrun
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/Title%20Image/Copy%20of%20IMG_3108.jpg',
       title: 'Apollo Tyres New Delhi Marathon',
-      gallery: this.apollo_tyres_marathon
+      gallery: [
+        { year: "2024", photos: this.apollo_tyres_marathon_2024 },
+        { year: "2023", photos: this.apollo_tyres_marathon_2023 }
+      ]
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/BAJAJ%20ALLIANZ%20PUNE%20HALF%20MARATHON/Title%20Image/Copy%20of%20IMG_8799.JPG',
@@ -1122,7 +1135,7 @@ export class EventsComponent implements OnInit, OnDestroy {
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/BENGALURU%20TECH%20SUMMIT/Main%20photo/Copy%20of%20WhatsApp%20Image%202024-03-05%20at%2012.04.53.jpeg',
-      title: 'BENGALURU TECH SUMMIT',
+      title: 'Bengaluru Tech Summit',
       gallery: this.Bengalurutech
     },
     {
@@ -1132,12 +1145,12 @@ export class EventsComponent implements OnInit, OnDestroy {
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/FAST%20&%20UP%20MUMBAI%20WALKATHON/Main%20Photo/Copy%20of%20IMG_1932.JPG',
-      title: 'FAST & UP MUMBAI WALKATHON',
+      title: 'Fast & Up Mumbai Walkathon',
       gallery: this.fastandupmumbai
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/G20%20DIA%20SUMMIT/Main%20photo/Copy%20of%20PHOTO-2023-08-17-09-12-01.jpg',
-      title: 'G20 DIA SUMMIT',
+      title: 'G20 Dia Summit',
       gallery: this.gdiasummit
     },
     {
@@ -1148,7 +1161,10 @@ export class EventsComponent implements OnInit, OnDestroy {
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/Main%20Photo/Copy%20of%20IMG_9181.JPG',
       title: 'Hiranandani Thane Half Marathon',
-      gallery: this.hiranandani_marathon
+      gallery: [
+        { year: "2025", photos: this.hiranandani_marathon_2025 },
+        { year: "2024", photos: this.hiranandani_marathon_2024 }
+      ]
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HPCL%202024/Main%20photo/Copy%20of%20PHOTO-2024-12-08-10-50-10.jpg',
@@ -1162,7 +1178,7 @@ export class EventsComponent implements OnInit, OnDestroy {
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/INVESTMENT%20KARNATAKA%202022/Main%20Photo/Copy%20of%20IMG_0284.jpg',
-      title: 'INVESTMENT KARNATAKA 2022',
+      title: 'Investment Karnataka 2022',
       gallery: this.investmentkarnatak
     },
     {
@@ -1192,7 +1208,7 @@ export class EventsComponent implements OnInit, OnDestroy {
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/LOLLAPALOOZA/Main%20Photo/Copy%20of%20IMG_6782.jpg',
-      title: 'LOLLAPALOOZA',
+      title: 'Lollapalooza',
       gallery: this.lollapalooza
     },
     {
@@ -1203,7 +1219,10 @@ export class EventsComponent implements OnInit, OnDestroy {
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/Main%20Photo/Copy%20of%20PHOTO-2024-12-15-09-13-23.jpg',
       title: 'Mazdock 10K Challenge 2024',
-      gallery: this.mazdock_challege
+      gallery: [
+        { year: "2025", photos: this.mazdock_challege_2025 },
+        { year: "2024", photos: this.mazdock_challege_2024 }
+      ]
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/ONE8%20RUN%20BENGALURU/Main%20photo/Copy%20of%20IMG_8686.jpg',
@@ -1218,7 +1237,10 @@ export class EventsComponent implements OnInit, OnDestroy {
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/Main%20Photo/Copy%20of%20IMG_2036.jpg',
       title: 'Satara Hill Half Marathon',
-      gallery: this.satara_marathon
+      gallery: [
+        { year: "2024", photos: this.satara_marathon_2024 },
+        { year: "2023", photos: this.satara_marathon_2023 }
+      ]
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TATA%20MUMBAI%20MARATHON/Main%20Photo/Copy%20of%20IMG_2973.JPG',
@@ -1237,7 +1259,7 @@ export class EventsComponent implements OnInit, OnDestroy {
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TCS%20FIT%204%20LIFE/Main%20Photo/Copy%20of%209142bde8-7158-4930-840c-1a127d70fa2e.JPG',
-      title: 'TCS FIT 4 Life',
+      title: 'TCS Fit 4 Life',
       gallery: this.tata_fit_life
     },
     {
@@ -1269,13 +1291,13 @@ export class EventsComponent implements OnInit, OnDestroy {
   intervalId: any;
   selectedTitle: string = '';
 
- constructor(private eventsReset: EventsResetService) {}
+  constructor(private eventsReset: EventsResetService) { }
 
   ngOnInit() {
     this.startCarousel();
-     this.eventsReset.reset$.subscribe(() => {
-    this.resetEventsState();
-  });
+    this.eventsReset.reset$.subscribe(() => {
+      this.resetEventsState();
+    });
   }
 
   startCarousel() {
@@ -1290,6 +1312,7 @@ export class EventsComponent implements OnInit, OnDestroy {
     this.selectedWork = work;
     this.selectedGallery = work.gallery;
     this.selectedTitle = work.title;
+    this.isYearWise = Array.isArray(work.gallery) && typeof work.gallery[0] === "object";
     this.showGallery = true;
   }
   openImageCarousel(images: string[]) {
@@ -1298,10 +1321,10 @@ export class EventsComponent implements OnInit, OnDestroy {
     this.showGallery = false;
     this.showCarousel = true;
   }
-  // goBackToGallery() {
-  //   this.showCarousel = false;
-  //   this.showGallery = true;
-  // }
+  goBackToGallery() {
+    this.showCarousel = false;
+    this.showGallery = true;
+  }
   updateCarouselIndex(direction: 'prev' | 'next') {
     if (direction === 'next') {
       this.currentCarouselIndex = (this.currentCarouselIndex + 1) % this.selectedGallery.length;
@@ -1313,15 +1336,15 @@ export class EventsComponent implements OnInit, OnDestroy {
     if (this.intervalId) clearInterval(this.intervalId);
   }
 
-resetEventsState() {
-  this.showGallery = false;
-  this.showCarousel = false;
-  this.selectedGallery = [];
-  this.selectedTitle = '';
-  this.currentCarouselIndex = 0;
+  resetEventsState() {
+    this.showGallery = false;
+    this.showCarousel = false;
+    this.selectedGallery = [];
+    this.selectedTitle = '';
+    this.currentCarouselIndex = 0;
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
 
 }

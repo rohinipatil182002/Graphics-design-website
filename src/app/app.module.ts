@@ -43,9 +43,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-     ReactiveFormsModule,
-     BrowserAnimationsModule,   
-    ToastrModule.forRoot({    
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
       timeOut: 3000,
       progressBar: true,
       progressAnimation: 'increasing',

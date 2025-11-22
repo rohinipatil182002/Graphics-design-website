@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -64,4 +65,19 @@ export class HomeComponent {
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Videos%20on%20Home%20Page/FINAL%20VIDEOS/ScreenRecording_11-08-2024%2010-47-25_1%20(1).mp4',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Videos%20on%20Home%20Page/FINAL%20VIDEOS/TATA%20ULTRA%20MARATHON%202025%20(1).mp4'
   ];
+
+constructor(private router: Router) {}
+
+  goToOurWorkSection() {
+  this.router.navigate(['/events']).then(() => {
+
+    setTimeout(() => {
+      const section = document.getElementById('our-work-section');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 300); 
+  });
+}
+
 }
