@@ -125,7 +125,7 @@
     .graphics-design-title {
         font-size: 28px;
         line-height: 38px;
-        letter-spacing: -1px;
+        letter-spacing: 0px;
         padding: 0 10px;
     }
 
@@ -153,6 +153,7 @@
     .graphics-design-title {
         font-size: 32px;
         line-height: 42px;
+        letter-spacing: 0px;
     }
 
     .graphics-design-description {
@@ -173,7 +174,8 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     .graphics-design-title {
         font-size: 38px;
-        line-height: 48px;
+        line-height: 45px;
+        letter-spacing: 0px;
     }
 
     .graphics-design-description {
@@ -194,6 +196,7 @@
     .graphics-design-title {
         font-size: 44px;
         line-height: 54px;
+        letter-spacing: -2px;
     }
 
     .graphics-design-description {
@@ -316,7 +319,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     .event-planning-title {
         font-size: 36px;
-        line-height: 54px;
+        line-height: 45px;
     }
 
     .event-planning-desc {
@@ -482,6 +485,7 @@
     .card-title {
         font-size: 16px;
         line-height: 22px;
+        letter-spacing: 0px;
     }
 
     .card-text {
@@ -496,6 +500,7 @@
     .card-body {
         text-align: center;
     }
+
     .explore-services .card {
         align-items: center;
     }
@@ -505,6 +510,7 @@
     .explore-title {
         font-size: 38px;
         line-height: 46px;
+        letter-spacing: -1px;
     }
 
     .explore .container-fluid {
@@ -513,6 +519,7 @@
 
     .card-title {
         font-size: 18px;
+        letter-spacing: 0px;
     }
 
     .card-text {
@@ -522,7 +529,8 @@
     .card-body {
         text-align: center;
     }
-      .explore-services .card {
+
+    .explore-services .card {
         align-items: center;
     }
 }
@@ -530,11 +538,13 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     .explore-title {
         font-size: 48px;
-        line-height: 58px;
+        line-height: 45px;
+        letter-spacing: -1px;
     }
 
     .card-title {
         font-size: 19px;
+        letter-spacing: 0px;
     }
 
     .card-text {
@@ -550,10 +560,12 @@
     .explore-title {
         font-size: 58px;
         line-height: 70px;
+        letter-spacing: -1px;
     }
 
     .card-title {
         font-size: 20px;
+        letter-spacing: 0px;
     }
 
     .card-text {

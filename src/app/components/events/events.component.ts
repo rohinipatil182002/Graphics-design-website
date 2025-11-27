@@ -1093,93 +1093,9 @@ export class EventsComponent implements OnInit, OnDestroy {
       gallery: this.national_conference
     },
     {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/Title%20Image/Copy%20of%20IMG_3151.jpg',
-      title: 'Ageas Federal Mumbai Half Marathon',
-      gallery: [
-        { year: "2024", photos: this.mumbai_marathon_2024 },
-        { year: "2023", photos: this.mumbai_marathon_2023 }
-      ]
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/AIRTEL%20DELHI%20HALF%20MARATHON/Title%20photo/Copy%20of%20IMG_0363.jpg',
-      title: 'Airtel Delhi Half Marathon',
-      gallery: this.delhi_marathon
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/AMAZON%20RUN%202023/Title%20Image/WhatsApp%20Image%202024-03-05%20at%2012.10.43%20(1).jpeg',
-      title: 'Amazon Run 2023',
-      gallery: this.amazonrun
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/Title%20Image/Copy%20of%20IMG_3108.jpg',
-      title: 'Apollo Tyres New Delhi Marathon',
-      gallery: [
-        { year: "2024", photos: this.apollo_tyres_marathon_2024 },
-        { year: "2023", photos: this.apollo_tyres_marathon_2023 }
-      ]
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/BAJAJ%20ALLIANZ%20PUNE%20HALF%20MARATHON/Title%20Image/Copy%20of%20IMG_8799.JPG',
-      title: 'Bajaj Allianz Pune Half Marathon',
-      gallery: this.bajaj_pune_marathon
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Bajaj%20Indef%20Thane%20Marathon/Main%20photo/Copy%20of%20PHOTO-2024-08-18-04-43-24.jpg',
-      title: 'Bajaj Indef Thane Marathon',
-      gallery: this.bajaj_thane_marathon
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/BENGALURU%2010K%20CHALLENGE/Main%20Photo/Copy%20of%20PHOTO-2024-07-01-14-51-31.jpg',
-      title: 'Bengaluru 10k Challenge',
-      gallery: this.Bengaluruchallenge
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/BENGALURU%20TECH%20SUMMIT/Main%20photo/Copy%20of%20WhatsApp%20Image%202024-03-05%20at%2012.04.53.jpeg',
-      title: 'Bengaluru Tech Summit',
-      gallery: this.Bengalurutech
-    },
-    {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/CAN%20RUN/Main%20Photo/Copy%20of%20PHOTO-2023-03-05-03-06-03.jpg',
       title: 'Can Run',
       gallery: this.can_run
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/FAST%20&%20UP%20MUMBAI%20WALKATHON/Main%20Photo/Copy%20of%20IMG_1932.JPG',
-      title: 'Fast & Up Mumbai Walkathon',
-      gallery: this.fastandupmumbai
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/G20%20DIA%20SUMMIT/Main%20photo/Copy%20of%20PHOTO-2023-08-17-09-12-01.jpg',
-      title: 'G20 Dia Summit',
-      gallery: this.gdiasummit
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Himalaya%20walkatahon/Main%20Photo/Copy%20of%20IMG_0424.JPG',
-      title: 'Himalaya Walkatahon',
-      gallery: this.himalaya_walkatahon
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/Main%20Photo/Copy%20of%20IMG_9181.JPG',
-      title: 'Hiranandani Thane Half Marathon',
-      gallery: [
-        { year: "2025", photos: this.hiranandani_marathon_2025 },
-        { year: "2024", photos: this.hiranandani_marathon_2024 }
-      ]
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HPCL%202024/Main%20photo/Copy%20of%20PHOTO-2024-12-08-10-50-10.jpg',
-      title: 'HPCL 2024',
-      gallery: this.hpcl
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Indian%20Navy%20Mumbai%20Heritage%20Run/Main%20Photo/Copy%20of%20WhatsApp%20Image%202024-03-05%20at%2012.10.54%20(3).jpeg',
-      title: 'Indian Navy Mumbai Heritage Run',
-      gallery: this.indian_navy
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/INVESTMENT%20KARNATAKA%202022/Main%20Photo/Copy%20of%20IMG_0284.jpg',
-      title: 'Investment Karnataka 2022',
-      gallery: this.investmentkarnatak
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Invincible%20Women/Main%20Photo/Copy%20of%20IMG_9675.jpg',
@@ -1187,14 +1103,9 @@ export class EventsComponent implements OnInit, OnDestroy {
       gallery: this.invincible_women
     },
     {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/IOCL%20SHIVAJI%20TRIATHLON/Main%20Photo/Copy%20of%209a88a204-7c9e-4f09-878f-5846cb33dcba(1).JPG',
-      title: 'IOCL Shivaji Triathlon',
-      gallery: this.iocl_shivaji_triathlon
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Jio%20Mumbai%20Cyclothon/Main%20Photo/Copy%20of%20IMG_5330.jpg',
-      title: 'Jio Mumbai Cyclothon',
-      gallery: this.jio_mumbai
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/PINKATHON/Main%20Photo/Copy%20of%20colors-pinkathon_1556010870.jpg',
+      title: 'Pinkathon',
+      gallery: this.pinkathon
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/JSW%20Squash%20League/Main%20Photo/Copy%20of%209d846c6e-c173-4581-85e7-867ccdce38c0.JPG',
@@ -1202,9 +1113,19 @@ export class EventsComponent implements OnInit, OnDestroy {
       gallery: this.jsw_squash
     },
     {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/KOLKATA%20FULL%20MARATHON/Main%20photo/Copy%20of%20PHOTO-2023-02-04-23-34-11.jpg',
-      title: 'Kolkata Full Marathon',
-      gallery: this.kolkata_marathon
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/BENGALURU%2010K%20CHALLENGE/Main%20Photo/Copy%20of%20PHOTO-2024-07-01-14-51-31.jpg',
+      title: 'Bengaluru 10k Challenge',
+      gallery: this.Bengaluruchallenge
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/AMAZON%20RUN%202023/Title%20Image/WhatsApp%20Image%202024-03-05%20at%2012.10.43%20(1).jpeg',
+      title: 'Amazon Run 2023',
+      gallery: this.amazonrun
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/BAJAJ%20ALLIANZ%20PUNE%20HALF%20MARATHON/Title%20Image/Copy%20of%20IMG_8799.JPG',
+      title: 'Bajaj Allianz Pune Half Marathon',
+      gallery: this.bajaj_pune_marathon
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/LOLLAPALOOZA/Main%20Photo/Copy%20of%20IMG_6782.jpg',
@@ -1212,9 +1133,97 @@ export class EventsComponent implements OnInit, OnDestroy {
       gallery: this.lollapalooza
     },
     {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/ONE8%20RUN%20BENGALURU/Main%20photo/Copy%20of%20IMG_8686.jpg',
+      title: 'ONE8 Run Bengaluru',
+      gallery: this.one_run_bengaluru
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Indian%20Navy%20Mumbai%20Heritage%20Run/Main%20Photo/Copy%20of%20WhatsApp%20Image%202024-03-05%20at%2012.10.54%20(3).jpeg',
+      title: 'Indian Navy Mumbai Heritage Run',
+      gallery: this.indian_navy
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Jio%20Mumbai%20Cyclothon/Main%20Photo/Copy%20of%20IMG_5330.jpg',
+      title: 'Jio Mumbai Cyclothon',
+      gallery: this.jio_mumbai
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/IOCL%20SHIVAJI%20TRIATHLON/Main%20Photo/Copy%20of%209a88a204-7c9e-4f09-878f-5846cb33dcba(1).JPG',
+      title: 'IOCL Shivaji Triathlon',
+      gallery: this.iocl_shivaji_triathlon
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/AIRTEL%20DELHI%20HALF%20MARATHON/Title%20photo/Copy%20of%20IMG_0363.jpg',
+      title: 'Airtel Delhi Half Marathon',
+      gallery: this.delhi_marathon
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/G20%20DIA%20SUMMIT/Main%20photo/Copy%20of%20PHOTO-2023-08-17-09-12-01.jpg',
+      title: 'G20 Dia Summit',
+      gallery: this.gdiasummit
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/WNC%20NAVY%20HALF%20MARATHON/Main%20Photo/Copy%20of%20IMG_9724.JPG',
+      title: 'WNC Navy Half Marathon',
+      gallery: this.wnc_navy_marathon
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TATA%20STEEL%20KOLKATA%2025K/Main%20Photo/Copy%20of%20IMG_0238.jpg',
+      title: 'Tata Steel Kolkata 25K',
+      gallery: this.tata_steel_kolkata
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/KOLKATA%20FULL%20MARATHON/Main%20photo/Copy%20of%20PHOTO-2023-02-04-23-34-11.jpg',
+      title: 'Kolkata Full Marathon',
+      gallery: this.kolkata_marathon
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TATA%20MUMBAI%20MARATHON/Main%20Photo/Copy%20of%20IMG_2973.JPG',
+      title: 'Tata Mumbai Marathon',
+      gallery: this.tata_mumbai_marathon
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/BENGALURU%20TECH%20SUMMIT/Main%20photo/Copy%20of%20WhatsApp%20Image%202024-03-05%20at%2012.04.53.jpeg',
+      title: 'Bengaluru Tech Summit',
+      gallery: this.Bengalurutech
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/INVESTMENT%20KARNATAKA%202022/Main%20Photo/Copy%20of%20IMG_0284.jpg',
+      title: 'Investment Karnataka 2022',
+      gallery: this.investmentkarnatak
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TCS%20WORLD%2010K%20BENGALURU/Main%20Photo/Copy%20of%207d388905-1a8e-48ae-8f01-9ff18beec510.JPG',
+      title: 'TCS World 10K Bengaluru',
+      gallery: this.tcs_world_bengaluru
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/WORLD%20COFFEE%20CONFERENCE/Main%20Photo/Copy%20of%20IMG_0657%20(1).jpg',
+      title: 'World Coffee Conference',
+      gallery: this.world_coffee_conference
+    },
+    {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAHARASHTRA%20POLICE%20INTERNATIONAL%20MARATHON/Main%20Photo/Copy%20of%20427af27c-2a22-4c0a-a04c-a455da7ecd32%202.JPG',
       title: 'Maharastra Police International Marathon',
       gallery: this.maharastra_police_marathon
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TCS%20FIT%204%20LIFE/Main%20Photo/Copy%20of%209142bde8-7158-4930-840c-1a127d70fa2e.JPG',
+      title: 'TCS Fit 4 Life',
+      gallery: this.tata_fit_life
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Himalaya%20walkatahon/Main%20Photo/Copy%20of%20IMG_0424.JPG',
+      title: 'Himalaya Walkatahon',
+      gallery: this.himalaya_walkatahon
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Ageas%20Federal%20Mumbai%20Half%20Marathon/Title%20Image/Copy%20of%20IMG_3151.jpg',
+      title: 'Ageas Federal Mumbai Half Marathon',
+      gallery: [
+        { year: "2024", photos: this.mumbai_marathon_2024 },
+        { year: "2023", photos: this.mumbai_marathon_2023 }
+      ]
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/MAZDOCK%2010K%20CHALLENGE%202024/Main%20Photo/Copy%20of%20PHOTO-2024-12-15-09-13-23.jpg',
@@ -1225,14 +1234,35 @@ export class EventsComponent implements OnInit, OnDestroy {
       ]
     },
     {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/ONE8%20RUN%20BENGALURU/Main%20photo/Copy%20of%20IMG_8686.jpg',
-      title: 'ONE8 Run Bengaluru',
-      gallery: this.one_run_bengaluru
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HPCL%202024/Main%20photo/Copy%20of%20PHOTO-2024-12-08-10-50-10.jpg',
+      title: 'HPCL 2024',
+      gallery: this.hpcl
     },
     {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/PINKATHON/Main%20Photo/Copy%20of%20colors-pinkathon_1556010870.jpg',
-      title: 'Pinkathon',
-      gallery: this.pinkathon
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/HIRANANDANI%20THANE%20HALF%20MARATHON/Main%20Photo/Copy%20of%20IMG_9181.JPG',
+      title: 'Hiranandani Thane Half Marathon',
+      gallery: [
+        { year: "2025", photos: this.hiranandani_marathon_2025 },
+        { year: "2024", photos: this.hiranandani_marathon_2024 }
+      ]
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/APOLLO%20TYRES%20NEW%20DELHI%20MARATHON/Title%20Image/Copy%20of%20IMG_3108.jpg',
+      title: 'Apollo Tyres New Delhi Marathon',
+      gallery: [
+        { year: "2024", photos: this.apollo_tyres_marathon_2024 },
+        { year: "2023", photos: this.apollo_tyres_marathon_2023 }
+      ]
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/FAST%20&%20UP%20MUMBAI%20WALKATHON/Main%20Photo/Copy%20of%20IMG_1932.JPG',
+      title: 'Fast & Up Mumbai Walkathon',
+      gallery: this.fastandupmumbai
+    },
+    {
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TATA%20SOCIAL%20ENTERPRISE%20CHALLENGE/Main%20photo/Copy%20of%20PHOTO-2024-09-15-21-18-56%202.jpg',
+      title: 'Tata Social Enterprise Challenge',
+      gallery: this.tata_challenge
     },
     {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/SATARA%20HILL%20HALF%20MARATHON/Main%20Photo/Copy%20of%20IMG_2036.jpg',
@@ -1243,46 +1273,16 @@ export class EventsComponent implements OnInit, OnDestroy {
       ]
     },
     {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TATA%20MUMBAI%20MARATHON/Main%20Photo/Copy%20of%20IMG_2973.JPG',
-      title: 'Tata Mumbai Marathon',
-      gallery: this.tata_mumbai_marathon
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TATA%20SOCIAL%20ENTERPRISE%20CHALLENGE/Main%20photo/Copy%20of%20PHOTO-2024-09-15-21-18-56%202.jpg',
-      title: 'Tata Social Enterprise Challenge',
-      gallery: this.tata_challenge
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TATA%20STEEL%20KOLKATA%2025K/Main%20Photo/Copy%20of%20IMG_0238.jpg',
-      title: 'Tata Steel Kolkata 25K',
-      gallery: this.tata_steel_kolkata
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TCS%20FIT%204%20LIFE/Main%20Photo/Copy%20of%209142bde8-7158-4930-840c-1a127d70fa2e.JPG',
-      title: 'TCS Fit 4 Life',
-      gallery: this.tata_fit_life
-    },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/TCS%20WORLD%2010K%20BENGALURU/Main%20Photo/Copy%20of%207d388905-1a8e-48ae-8f01-9ff18beec510.JPG',
-      title: 'TCS World 10K Bengaluru',
-      gallery: this.tcs_world_bengaluru
-    },
-    {
       img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/UBS%20Athletic%20Kids%20Cup/Main%20Photo/Copy%20of%20IMG_7139.JPG',
       title: 'USB Athletic Kids Cup',
       gallery: this.usb_athletic_cup
     },
     {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/WNC%20NAVY%20HALF%20MARATHON/Main%20Photo/Copy%20of%20IMG_9724.JPG',
-      title: 'WNC Navy Half Marathon',
-      gallery: this.wnc_navy_marathon
+      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/Bajaj%20Indef%20Thane%20Marathon/Main%20photo/Copy%20of%20PHOTO-2024-08-18-04-43-24.jpg',
+      title: 'Bajaj Indef Thane Marathon',
+      gallery: this.bajaj_thane_marathon
     },
-    {
-      img: 'https://websitemetadata.blob.core.windows.net/website/4.%20Our%20Events%20-%20Photos/Our%20work/1.%20FINAL%20WORK%20(Azure)/WORLD%20COFFEE%20CONFERENCE/Main%20Photo/Copy%20of%20IMG_0657%20(1).jpg',
 
-      title: 'World Coffee Conference',
-      gallery: this.world_coffee_conference
-    },
   ];
 
   activeIndex = 0;

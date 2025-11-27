@@ -1,90 +1,90 @@
 /* ------------------- About Us Banner Section ------------------- */
 .about-upper-section {
-    position: relative;
-    padding-top: 140px;
-    height: 397px;
-    background: linear-gradient(rgba(32, 8, 16, 0.7), rgba(32, 8, 16, 0.7)),
-        url("/assets/Images/branding-banner-img.jpg") center center / cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  position: relative;
+  padding-top: 140px;
+  height: 397px;
+  background: linear-gradient(rgba(32, 8, 16, 0.7), rgba(32, 8, 16, 0.7)),
+    url("/assets/Images/branding-banner-img.jpg") center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .about-upper-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(17, 4, 8, 0.5);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 4, 8, 0.5);
+  z-index: 1;
 }
 
 .about-title {
-    font-family: 'Baskervville', serif;
-    font-size: 135px;
-    font-weight: 400;
-    line-height: 125px;
-    letter-spacing: -2px;
-    color: #FFFFFF;
-    position: relative;
-    z-index: 2;
-    text-transform: capitalize;
+  font-family: 'Baskervville', serif;
+  font-size: 135px;
+  font-weight: 400;
+  line-height: 125px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+  text-transform: capitalize;
 }
 
 @media (max-width: 1199.98px) {
-    .about-title {
-        font-size: 100px;
-        line-height: 110px;
-    }
+  .about-title {
+    font-size: 100px;
+    line-height: 110px;
+  }
 
-    .about-upper-section {
-        height: 350px;
-    }
+  .about-upper-section {
+    height: 350px;
+  }
 }
 
 @media (max-width: 991.98px) {
-    .about-title {
-        font-size: 80px;
-        line-height: 95px;
-    }
+  .about-title {
+    font-size: 80px;
+    line-height: 95px;
+  }
 
-    .about-upper-section {
-        height: 320px;
-    }
+  .about-upper-section {
+    height: 320px;
+  }
 }
 
 @media (max-width: 767.98px) {
-    .about-title {
-        font-size: 60px;
-        line-height: 75px;
-    }
+  .about-title {
+    font-size: 60px;
+    line-height: 75px;
+  }
 
-    .about-upper-section {
-        height: 280px;
-    }
+  .about-upper-section {
+    height: 280px;
+  }
 }
 
 @media (max-width: 575.98px) {
-    .about-title {
-        font-size: 42px;
-        line-height: 55px;
-    }
+  .about-title {
+    font-size: 42px;
+    line-height: 55px;
+  }
 
-    .about-upper-section {
-        height: 240px;
-        padding-top: 100px;
-    }
+  .about-upper-section {
+    height: 240px;
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 479.98px) {
-    .about-title {
-        font-size: 32px;
-        line-height: 42px;
-    }
+  .about-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
 
-    .about-upper-section {
-        height: 220px;
-    }
+  .about-upper-section {
+    height: 220px;
+  }
 }
 
 /* ------------------------- Transforming Visions into Reality: Innovative Branding Solutions for Your Business. ------------------------- */
@@ -121,7 +121,7 @@
   .transforming-vision-title {
     font-size: 28px;
     line-height: 38px;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     text-align: center;
   }
 
@@ -144,6 +144,7 @@
   .transforming-vision-title {
     font-size: 32px;
     line-height: 42px;
+    letter-spacing: 0px;
   }
 
   .transforming-vision-description {
@@ -160,6 +161,7 @@
   .transforming-vision-title {
     font-size: 36px;
     line-height: 48px;
+    letter-spacing: 0px;
   }
 
   .transforming-vision-description {
@@ -176,6 +178,7 @@
   .transforming-vision-title {
     font-size: 42px;
     line-height: 58px;
+    letter-spacing: 0px;
   }
 
   .transforming-vision-description {

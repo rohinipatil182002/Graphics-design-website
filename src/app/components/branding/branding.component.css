@@ -3,7 +3,7 @@
   position: relative;
   padding-top: 140px;
   height: 397px;
-  background:   linear-gradient(rgba(32, 8, 16, 0.7), rgba(32, 8, 16, 0.7)), 
+  background: linear-gradient(rgba(32, 8, 16, 0.7), rgba(32, 8, 16, 0.7)),
     url("/assets/Images/branding-banner-img.jpg") center center / cover no-repeat;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@
   content: "";
   position: absolute;
   inset: 0;
- background: rgba(17, 4, 8, 0.5); 
+  background: rgba(17, 4, 8, 0.5);
   z-index: 1;
 }
 
@@ -27,7 +27,7 @@
   letter-spacing: -2px;
   color: #FFFFFF;
   position: relative;
-  z-index: 2; 
+  z-index: 2;
   text-transform: capitalize;
 }
 
@@ -36,6 +36,7 @@
     font-size: 100px;
     line-height: 110px;
   }
+
   .about-upper-section {
     height: 350px;
   }
@@ -45,7 +46,9 @@
   .about-title {
     font-size: 80px;
     line-height: 95px;
+
   }
+
   .about-upper-section {
     height: 320px;
   }
@@ -56,6 +59,7 @@
     font-size: 60px;
     line-height: 75px;
   }
+
   .about-upper-section {
     height: 280px;
   }
@@ -66,6 +70,7 @@
     font-size: 42px;
     line-height: 55px;
   }
+
   .about-upper-section {
     height: 240px;
     padding-top: 100px;
@@ -77,11 +82,13 @@
     font-size: 32px;
     line-height: 42px;
   }
+
   .about-upper-section {
     height: 220px;
   }
 }
-/* ------------------------- Transforming Visions into Reality: Innovative Branding Solutions for Your Business. ------------------------- */ 
+
+/* ------------------------- Transforming Visions into Reality: Innovative Branding Solutions for Your Business. ------------------------- */
 .transforming-vision {
   position: relative;
   background-color: #fff;
@@ -116,15 +123,18 @@
     font-size: 62px;
     line-height: 80px;
   }
+
   .transforming-vision-description {
     font-size: 26px;
   }
 }
+
 @media (max-width: 1869.98px) and (min-width: 1400px) {
   .transforming-vision-title {
     font-size: 54px;
     line-height: 70px;
   }
+
   .transforming-vision-description {
     font-size: 22px;
   }
@@ -135,6 +145,7 @@
     font-size: 48px;
     line-height: 64px;
   }
+
   .transforming-vision-description {
     font-size: 21px;
   }
@@ -144,7 +155,9 @@
   .transforming-vision-title {
     font-size: 42px;
     line-height: 58px;
+    letter-spacing: -1px;
   }
+
   .transforming-vision-description {
     font-size: 20px;
   }
@@ -154,14 +167,17 @@
   .transforming-vision {
     padding: 60px 0;
   }
+
   .transforming-vision-container {
     width: 90%;
   }
+
   .transforming-vision-title {
     font-size: 36px;
     line-height: 48px;
     text-align: center;
   }
+
   .transforming-vision-description {
     font-size: 18px;
     text-align: center;
@@ -172,14 +188,18 @@
   .transforming-vision {
     padding: 40px 0;
   }
+
   .transforming-vision-container {
     width: 92%;
   }
+
   .transforming-vision-title {
     font-size: 30px;
     line-height: 42px;
     margin-bottom: 0px !important;
+    letter-spacing: 0px;
   }
+
   .transforming-vision-description {
     font-size: 17px;
   }
@@ -189,14 +209,17 @@
   .transforming-vision {
     padding: 15px 0;
   }
+
   .transforming-vision-container {
     width: 95%;
   }
+
   .transforming-vision-title {
     font-size: 26px;
     line-height: 36px;
     letter-spacing: -1px;
   }
+
   .transforming-vision-description {
     font-size: 16px;
   }
@@ -206,16 +229,18 @@
   .transforming-vision {
     padding: 30px 0;
   }
+
   .transforming-vision-title {
     font-size: 22px;
     line-height: 32px;
   }
+
   .transforming-vision-description {
     font-size: 15px;
   }
 }
 
-/* ------------------------------ Our Expertise Section --------------------------------- */ 
+/* ------------------------------ Our Expertise Section --------------------------------- */
 
 .our-expertise {
   position: relative;
@@ -251,35 +276,36 @@
 }
 
 .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-   backdrop-filter: blur(12.300000190734863px);
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    border: 1px solid white;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 10;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  backdrop-filter: blur(12.300000190734863px);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: 1px solid white;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .carousel-btn.prev {
   left: 10px;
 }
+
 .carousel-btn.next {
   right: 10px;
 }
 
 .carousel-btn:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 1199.98px) {

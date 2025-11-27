@@ -30,11 +30,14 @@
     z-index: 2;
     text-transform: capitalize;
 }
+
 @media (max-width: 1509.98px) {
     .about-title {
         font-size: 120px;
         line-height: 110px;
-    }}
+    }
+}
+
 @media (max-width: 1199.98px) {
     .about-title {
         font-size: 90px;
@@ -178,6 +181,7 @@
         font-size: 36px;
         line-height: 48px;
         text-align: center;
+        letter-spacing: 0px;
     }
 
     .transforming-vision-description {
