@@ -6,7 +6,7 @@ import { Component, ElementRef, HostListener, Renderer2, ViewChild } from '@angu
   styleUrls: ['./exhibition-setup.component.css']
 })
 export class ExhibitionSetupComponent {
-@ViewChild('carouselTrack') carouselTrack!: ElementRef<HTMLDivElement>;
+  @ViewChild('carouselTrack') carouselTrack!: ElementRef<HTMLDivElement>;
 
   currentIndex = 1;
   interval: any;
@@ -102,7 +102,7 @@ export class ExhibitionSetupComponent {
   }
 
   nextSlide() {
-    if (this.isAnimating) return;   
+    if (this.isAnimating) return;
     this.isAnimating = true;
 
     this.currentIndex++;
@@ -112,7 +112,7 @@ export class ExhibitionSetupComponent {
   }
 
   prevSlide() {
-    if (this.isAnimating) return;  
+    if (this.isAnimating) return;
     this.isAnimating = true;
 
     this.currentIndex--;

@@ -41,10 +41,6 @@ export class HomeComponent {
   ];
 
   clientLogos: string[] = [
-    // 'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/08aed8a9cbb0668ad6d6cb4516410d69.png',
-    'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/10th.png',
-    'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/11th.webp',
-    'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/12th.png',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/1st%20.png',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/2.png',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/3%200r%204th%20.png',
@@ -53,8 +49,12 @@ export class HomeComponent {
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/5th.png',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/6th.png',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/7th.png',
+    // 'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/08aed8a9cbb0668ad6d6cb4516410d69.png',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/8th.png',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/9th.png',
+    'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/10th.png',
+    'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/11th.webp',
+    'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/12th.png',
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Our%20Clients/Copy%20of%2014.png'
   ];
 
@@ -66,18 +66,18 @@ export class HomeComponent {
     'https://websitemetadata.blob.core.windows.net/website/1.%20Home%20Page/Videos%20on%20Home%20Page/FINAL%20VIDEOS/TATA%20ULTRA%20MARATHON%202025%20(1).mp4'
   ];
 
-constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   goToOurWorkSection() {
-  this.router.navigate(['/events']).then(() => {
+    this.router.navigate(['/events']).then(() => {
 
-    setTimeout(() => {
-      const section = document.getElementById('our-work-section');
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 300); 
-  });
-}
+      setTimeout(() => {
+        const section = document.getElementById('our-work-section');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300);
+    });
+  }
 
 }

@@ -1289,7 +1289,7 @@ export class EventsComponent implements OnInit, OnDestroy {
   prevIndex = this.images.length - 1;
   nextIndex = 1;
   intervalId: any;
-  selectedTitle: string = '';
+  selectedTitle: string = ''; 
 
   constructor(private eventsReset: EventsResetService) { }
 
@@ -1315,16 +1315,19 @@ export class EventsComponent implements OnInit, OnDestroy {
     this.isYearWise = Array.isArray(work.gallery) && typeof work.gallery[0] === "object";
     this.showGallery = true;
   }
+  
   openImageCarousel(images: string[]) {
     this.selectedGallery = images;
     this.currentCarouselIndex = 0;
     this.showGallery = false;
     this.showCarousel = true;
   }
+
   goBackToGallery() {
     this.showCarousel = false;
     this.showGallery = true;
   }
+
   updateCarouselIndex(direction: 'prev' | 'next') {
     if (direction === 'next') {
       this.currentCarouselIndex = (this.currentCarouselIndex + 1) % this.selectedGallery.length;
@@ -1332,6 +1335,7 @@ export class EventsComponent implements OnInit, OnDestroy {
       this.currentCarouselIndex = (this.currentCarouselIndex - 1 + this.selectedGallery.length) % this.selectedGallery.length;
     }
   }
+
   ngOnDestroy() {
     if (this.intervalId) clearInterval(this.intervalId);
   }

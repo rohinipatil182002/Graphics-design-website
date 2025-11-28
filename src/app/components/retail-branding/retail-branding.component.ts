@@ -16,7 +16,7 @@ export class RetailBrandingComponent {
   isAnimating = false;
 
 
-  constructor(private renderer: Renderer2) { }
+  constructor(private renderer: Renderer2) { } 
 
   ngAfterViewInit() {
     this.setupCarousel();
@@ -46,7 +46,7 @@ export class RetailBrandingComponent {
 
     this.total = track.children.length;
 
-    this.updateSlideWidths();
+    this.updateSlideWidths(); 
 
     this.currentIndex = 1;
     track.style.transform = `translateX(-${this.currentIndex * this.slideWidth}%)`;
