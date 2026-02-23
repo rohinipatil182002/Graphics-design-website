@@ -15,7 +15,7 @@
         </div>
 
         <div class="row g-4">
-            <div class="col-12 col-sm-6 col-lg-3 col-md-4" *ngFor="let work of works">
+            <div class="col-12 col-sm-6 col-lg-3 col-md-4" *ngFor="let work of reversedWorks">
                 <div class="work-card position-relative overflow-hidden" (click)="openGallery(work)">
                     <img [src]="work.img" alt="Our Work" class="img-fluid w-100 work-img" />
                     <div class="work-overlay position-absolute bottom-0 start-0 w-100 px-3 pb-2">

@@ -7,7 +7,7 @@
     justify-content: flex-start;
     background:
         linear-gradient(180deg, rgba(76, 0, 42, 0.85) 0%, rgba(88, 9, 53, 0.85) 100%),
-        url("https://websitemetadata.blob.core.windows.net/website/Banner%20Images/Contact%20us%20banner/d9e441cd-f86e-48cc-b450-2b7e622cf520.JPG") center bottom / cover no-repeat;
+        url("https://graphicswebsite.blob.core.windows.net/website/Banner%20Images/Contact%20us%20banner/d9e441cd-f86e-48cc-b450-2b7e622cf520.JPG") center bottom / cover no-repeat;
     background-attachment: fixed;
     color: #fff;
     overflow: hidden;

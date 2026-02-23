@@ -18,13 +18,14 @@ export class ContactUsComponent {
 
   ngOnInit() {
     this.contactForm = this.fb.group({
-      fullName: ['', Validators.required],
+    
+      fullName: ['',[ Validators.required, Validators.pattern(/^[^\s].*$/)] ],
       email: [
         '',
         [
-          Validators.required,
+          Validators.required, 
           Validators.email,
-          Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}$/)
+          Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}$/)   
         ]
       ],
       mobile: ['',  [
@@ -33,7 +34,7 @@ export class ContactUsComponent {
         ]],
       companyName: ['', Validators.required],
       message: ['']
-    });
+    }); 
   }
 
   onSubmit(): void {
